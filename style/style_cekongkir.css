@@ -1,0 +1,46 @@
+* {
+    border: 1px solid black;
+    font-family: roboto;
+}
+
+#tengah{
+        min-height: 80%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.container{
+	width: 80%;
+	margin: auto;
+}
+.container:after{ /*ini buat hero image nya jadi 
+    full di bawah content dalam artian masuk ke dalem div(konten)*/
+	content: '';
+	display: block;
+	clear: both;
+}
+header h1{
+	float: left; /*(ini mbuat jadi 1 panel dengan ulli)*/
+	padding: 15px 0;
+	color: #ff0000;
+}
+header ul{ /*ini buat nggeser ke kanan yang list (li)*/
+	float: right;
+}
+header ul li{
+	display: inline-block; 
+}
+header ul li a{
+	padding: 25px 20px; /*memberikan space ruang di sekitar kata*/
+	display: inline-block;
+}
+header ul li a:hover{ /*hover itu buat adanya efek saat kursor nya di atas elemen tertentu*/
+	background-color: #f02626;
+	color : #fff;
+}
+.active{ /*ini merujuk sama home bagian list*/
+	background-color: #f02626;
+	color: #fff;
+}

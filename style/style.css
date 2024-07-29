@@ -1,0 +1,107 @@
+* {
+    /*order: 1px solid black;*/
+    font-family: roboto;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.container{
+	width: 80%;
+	margin: auto;
+}
+.container:after{ /*ini buat hero image nya jadi 
+    full di bawah content dalam artian masuk ke dalem div(konten)*/
+	content: '';
+	display: block;
+	clear: both;
+}
+header h1{
+	float: left; /*(ini mbuat jadi 1 panel dengan ulli)*/
+	padding: 15px 0;
+	color: #ff0000;
+}
+header ul{ /*ini buat nggeser ke kanan yang list (li)*/
+	float: right;
+}
+header ul li{
+	display: inline-block; 
+}
+header ul li a{
+	padding: 25px 20px; /*memberikan space ruang di sekitar kata*/
+	display: inline-block;
+}
+header ul li a:hover{ /*hover itu buat adanya efek saat kursor nya di atas elemen tertentu*/
+	background-color: #f02626;
+	color : #fff;
+}
+.active{ /*ini merujuk sama home bagian list*/
+	background-color: #f02626;
+	color: #fff;
+}
+
+.banner { /*hero image*/
+	height: 80vh;
+	background-image: url('/img/RESI.png');
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.banner:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(254, 222, 173, .5);
+}
+
+.banner h2{
+	color: #030303;
+	z-index: 1;
+	padding: 20px 25px;
+	border: 3px solid #000000;
+	margin-bottom: 90px;
+    text-align: center
+}
+section h2 {
+	text-align: center;
+	color: rgb(224, 56, 56);
+	padding: 20px 0;
+}
+img.tengah{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 20px 0;
+}
+
+.container p{
+    text-align: center
+}
+
+.button li{
+    display: inline-block;
+	position: relative;
+    left: 40%;
+}
+.button li a{
+    padding: 25px 20px; /*memberikan space ruang di sekitar kata*/
+	display: inline-block;
+    
+}
+
+.button li a:hover{ /*hover itu buat adanya efek saat kursor nya di atas elemen tertentu*/
+	background-color: #f02626;
+	color : #fff;
+}
+
+footer{
+	padding: 20px 0;
+	background-color: #f02626;
+	color: #fff;
+	text-align: center;
+}
